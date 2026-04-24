@@ -44,17 +44,17 @@ published: true
 ## 最终效果
 
 <div class="demo-hero">
-  <video autoplay muted loop playsinline>
+  <video autoplay muted loop playsinline controls>
     <source src="{{ site.baseurl }}/files/portfolio/internship-quadruped-sim2real/payload.mp4" type="video/mp4">
     您的浏览器不支持 HTML5 video。
   </video>
 </div>
 
 <div class="demo-row">
-  <video autoplay muted loop playsinline>
+  <video autoplay muted loop playsinline controls>
     <source src="{{ site.baseurl }}/files/portfolio/internship-quadruped-sim2real/force.mp4" type="video/mp4">
   </video>
-  <video autoplay muted loop playsinline>
+  <video autoplay muted loop playsinline controls>
     <source src="{{ site.baseurl }}/files/portfolio/internship-quadruped-sim2real/rough_slope.mp4" type="video/mp4">
   </video>
 </div>
