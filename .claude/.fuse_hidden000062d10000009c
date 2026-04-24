@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git mv *)",
+      "Bash(bundle exec *)",
+      "Bash(curl -sf http://localhost:4000/portfolio/ -o /dev/null)"
+    ]
+  }
+}

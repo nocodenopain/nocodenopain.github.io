@@ -30,3 +30,12 @@ redirect_from:
 | **Robots** | Unitree Go2, 自研四足机器人 |
 | **Deployment** | C++, ROS 2, Jetson Orin |
 | **AI Coding Tools** | Claude Code, OpenAI Codex, Cursor |
+{: .tech-stack}
+
+<style>
+.tech-stack { font-size: 1.05em; margin: 1.2em auto; border-collapse: collapse; }
+.tech-stack th, .tech-stack td { padding: 0.75em 1.5em; border-bottom: 1px solid #e5e5e5; text-align: center; vertical-align: middle; }
+.tech-stack thead th { background: #f5f5f5; font-weight: 600; border-bottom: 2px solid #d0d0d0; }
+.tech-stack tbody td:first-child { white-space: nowrap; font-weight: 500; color: #333; }
+.tech-stack tr:last-child td { border-bottom: none; }
+</style>

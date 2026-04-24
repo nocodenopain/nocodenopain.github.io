@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git mv *)",
+      "Bash(bundle exec *)",
+      "Bash(curl -sf http://localhost:4000/portfolio/ -o /dev/null)",
+      "Bash(ffprobe -v error -show_entries stream=codec_name,codec_type,pix_fmt,profile,width,height -of default=noprint_wrappers=1 /media/woan/Data/workspace/nocodenopain.github.io/files/portfolio/go2-blind-locomotion/stairs.mp4)",
+      "Bash(ffmpeg -version)",
+      "Bash(sudo apt *)",
+      "Bash(ffmpeg -y -i stairs.mp4 -c:v libx264 -crf 23 -preset medium -c:a aac -movflags +faststart stairs-h264.mp4)",
+      "Bash(python3 -c ' *)",
+      "Bash(curl -sf http://localhost:4000/portfolio/go2-blind-locomotion/ -o /dev/null)"
+    ]
+  }
+}
