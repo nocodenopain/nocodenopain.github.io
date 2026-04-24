@@ -43,23 +43,29 @@ published: true
 
 ## 最终效果
 
-<!--
-成功 demo（文件放到 files/portfolio/internship-quadruped-sim2real/ 下），每段用以下模板嵌入：
+<div class="demo-hero">
+  <video autoplay muted loop playsinline>
+    <source src="{{ site.baseurl }}/files/portfolio/internship-quadruped-sim2real/payload.mp4" type="video/mp4">
+    您的浏览器不支持 HTML5 video。
+  </video>
+</div>
 
-<video controls style="max-width: 100%; max-height: 70vh; display: block; margin: 0 auto;">
-  <source src="{{ site.baseurl }}/files/portfolio/internship-quadruped-sim2real/slope.mp4" type="video/mp4">
-</video>
+<div class="demo-row">
+  <video autoplay muted loop playsinline>
+    <source src="{{ site.baseurl }}/files/portfolio/internship-quadruped-sim2real/force.mp4" type="video/mp4">
+  </video>
+  <video autoplay muted loop playsinline>
+    <source src="{{ site.baseurl }}/files/portfolio/internship-quadruped-sim2real/rough_slope.mp4" type="video/mp4">
+  </video>
+</div>
 
-建议清单：
-- slope.mp4        户外爬坡
-- rough-terrain.mp4 崎岖路面
-- disturbance.mp4  抗干扰（踢 / 推）
-- payload.mp4      负载行走
-
-过程中失败 demo（建议嵌到上面对应"问题 N"小节末尾作为对比）：
-- jitter-fail.mp4   问题 1 抖动现象
-- base-shake.mp4    问题 2 基座晃动
-- drag-fail.mp4     问题 3 拖地现象
--->
-
-<p style="color:#888;"><em>Demo 视频待补</em></p>
+<style>
+.demo-hero, .demo-row { max-width: 600px; margin: 1.2em auto; }
+.demo-hero video { width: 100%; height: auto; display: block; border-radius: 4px; background: #000; }
+.demo-row { display: flex; justify-content: space-between; align-items: flex-start; }
+.demo-row video { max-height: 480px; width: auto; height: auto; display: block; border-radius: 4px; background: #000; }
+@media (max-width: 620px) {
+  .demo-row { flex-wrap: wrap; justify-content: center; gap: 1em; }
+  .demo-row video { max-width: 100%; max-height: none; }
+}
+</style>
