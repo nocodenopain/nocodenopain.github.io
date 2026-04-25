@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-**李麒飞（Li Qifei）**，南方科技大学机械与能源工程系智能制造与机器人专业在读研究生。研究方向聚焦 **强化学习（Reinforcement Learning）** 与 **足式机器人（Legged Robots）**，关注基于大规模并行 **仿真引擎** 的策略训练与 Sim-to-Real 迁移，并拓展至模型微调与视觉重构方向。本站用于整理科研产出与项目实践，具体论文与项目分别见 [Publications](/publications/) 与 [Projects](/portfolio/)。
+**李麒飞（Li Qifei）**，南方科技大学机械与能源工程系智能制造与机器人专业在读研究生。研究方向聚焦 **强化学习（Reinforcement Learning）** ， **足式机器人（Legged Robots）**， **仿真引擎**等。
 
 ## 教育经历
 
@@ -16,9 +16,11 @@ redirect_from:
 
 ## 研究方向
 
-- **强化学习在足式机器人运动控制中的应用**：面向四足平台的 locomotion 策略训练与部署。
-- **仿真引擎驱动的大规模并行训练**：在 Isaac Gym / Isaac Sim / MuJoCo 下开展 domain randomization 与 reward shaping。
-- **模型微调与视觉重构**：探索预训练模型在机器人策略与感知任务上的迁移与融合。
+<!-- - **强化学习在足式机器人运动控制中的应用**：面向四足平台的 locomotion 策略训练与部署。
+- **仿真引擎驱动的大规模并行训练**：在 Isaac Gym / Isaac Sim / MuJoCo 下开展 domain randomization 与 reward shaping。 -->
+<!-- - **模型微调与视觉重构**：探索预训练模型在机器人策略与感知任务上的迁移与融合。 -->
+- **基于强化学习的四足机器人运动控制**：基于**Isaac Gym，Isaac Sim**等大规模并行仿真平台搭建强化学习框架，并基于Mujoco完成sim2sim验证，以及真机部署
+- **仿真引擎**：具备仿真引擎开发经验，了解仿真相关的底层原理
 
 ## 技术栈
 
