@@ -23,7 +23,7 @@ published: true
 
 ## 实现流程
 
-复现 HIMLoco、MoE、CTS 等论文的 RL locomotion 算法，在 Isaac Gym + Legged-Gym + rsl_rl 下训练盲爬策略，采用大规模并行 rollout 加速收敛。训练完成后在 MuJoCo 中做 sim-to-sim 验证，之后将策略导出为 JIT，部署到 Go2 板载运行。
+复现 **HIMLoco**、**MoE**、**CTS** 等论文的 RL locomotion 算法，在 Isaac Gym + Legged-Gym + rsl_rl 下训练盲爬策略。训练完成后在 MuJoCo 中做 sim-to-sim 验证，之后将策略导出为 JIT，部署到 Go2 板载运行。
 
 ## 最终效果
 
