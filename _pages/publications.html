@@ -5,34 +5,25 @@ permalink: /publications/
 author_profile: true
 ---
 
-<p>本栏收录在 <strong>强化学习</strong> 与 <strong>足式机器人</strong> 方向公开发表的论文。研究重心涵盖大规模并行仿真下的策略训练、Sim-to-Real 部署，以及模型微调与视觉重构在机器人策略学习中的应用。每篇论文下方附 paper 链接与引用信息。</p>
-
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
+{% for post in site.publications reversed %}
+  <article class="publication-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
+    <h2 class="archive__item-title" itemprop="headline">
+      <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
+    </h2>
+    <p class="publication-item__authors" itemprop="author">{{ post.authors }}</p>
+    <p class="publication-item__venue" itemprop="isPartOf"><i>{{ post.venue }}</i></p>
+    <p class="publication-item__links">
+      {% if post.paperurl %}
+        <a class="btn" href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">Article</a>
       {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+      {% if post.codeurl %}
+        <a class="btn" href="{{ post.codeurl }}" target="_blank" rel="noopener noreferrer">Code</a>
+      {% endif %}
+    </p>
+  </article>
+{% endfor %}
 
 
 
