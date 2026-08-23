@@ -8,7 +8,7 @@ date: 2026-01-01
 venue: 'IEEE Robotics and Automation Letters (RAL)'
 authors: 'Tianjian Lei, Junpeng Chen, Qifei Li, Jian S. Dai, and Yang Pan'
 paperurl: 'https://doi.org/10.1109/LRA.2026.3692328'
-codeurl: 'https://github.com/leitianjian/sire'
+codeurl: 'https://github.com/nocodenopain/sire/tree/dev'
 citation: 'Tianjian Lei, Junpeng Chen, Qifei Li, Jian S. Dai, and Yang Pan (2026). &quot;A Convergent Continuous Contact Solver with Explicit Separation Time for High-Stiffness Contact.&quot; <i>IEEE Robotics and Automation Letters</i>.'
 published: true
 ---
